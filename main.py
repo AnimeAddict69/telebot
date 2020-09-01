@@ -1,6 +1,6 @@
 import telebot
 
-API_TOKEN = '799711598:AAEPylDir5KK2oEfgS7wGwe1TIiQ1aW7ivSs'
+API_TOKEN = 'BOT_TOKEN'
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -19,7 +19,7 @@ I am here to echo your kind words back to you. Just say anything nice and I'll s
 @bot.message_handler(commands=['about'])
 def send_welcome(message):
 	bot.reply_to(message, """\
-    thisbot is created by rudraksh
+    this bot is created by rudraksh
 """)
 
 
